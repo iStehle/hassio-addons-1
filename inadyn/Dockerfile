@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 FROM ${BUILD_FROM}
 
-ENV inadyn_release https://github.com/troglobit/inadyn/releases/download/v2.2.1/inadyn-2.2.1.tar.xz
+ENV inadyn_release https://github.com/troglobit/inadyn/releases/download/v2.3.1/inadyn-2.3.1.tar.xz
 ENV libite_release https://github.com/troglobit/libite/releases/download/v1.9.2/libite-1.9.2.tar.xz
 ENV libconfuse_release https://github.com/martinh/libconfuse/releases/download/v3.2.1/confuse-3.2.1.tar.xz
 
@@ -48,7 +48,7 @@ LABEL \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    maintainer="Nicholas Alipaz <nicholas@alipaz.net>" \
+    maintainer="Tobias Stehle" \
     org.label-schema.description="Inadyn add-on for Hass.io" \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="Hass.io inadyn add-on for ${BUILD_ARCH}" \
@@ -56,5 +56,5 @@ LABEL \
     org.label-schema.url="https://addons.community" \
     org.label-schema.usage="https://github.com/nalipaz/hassio-addons/tree/master/README.md" \
     org.label-schema.vcs-ref=${BUILD_REF} \
-    org.label-schema.vcs-url="https://github.com/nalipaz/hassio-addons" \
-    org.label-schema.vendor="Nicholas Alipaz' Hass.io Addons"
+    org.label-schema.vcs-url="https://github.com/iStehle/hassio-addons1" \
+    org.label-schema.vendor="Tobias Stehle Hass.io Addons"
